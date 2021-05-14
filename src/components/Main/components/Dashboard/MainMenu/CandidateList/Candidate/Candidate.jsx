@@ -35,13 +35,13 @@ function Candidate({ dataCandidate, ChangeSpells }) {
   const onUpdate = async values => {
     // const newCandidate = {...dataCandidate,...values}
     const newCandidate = {...dataCandidate, ...values, image: fileUrl,time: time};
-    console.log({...dataCandidate})
-    console.log({...values})
-    console.log(newCandidate)
+    // console.log({...dataCandidate})
+    // console.log({...values})
+    // console.log(newCandidate)
  
     
-    console.log(newCandidate)
-    console.log(dataCandidate)
+    // console.log(newCandidate)
+    // console.log(dataCandidate)
     await db.collection("Projects").doc(dataCandidate.id).update(newCandidate);
     // const data = await db.collection("Projects").get();
     // ChangeSpells(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));

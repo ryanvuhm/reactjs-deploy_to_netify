@@ -84,6 +84,8 @@ export default function UpdateCandidate(props) {
   });
 
   const handleSubmit = async values => {
+
+    console.log(values)
     const { onSubmit } = props;
     if (onSubmit) {
       await onSubmit(values);
@@ -116,6 +118,8 @@ export default function UpdateCandidate(props) {
   };
 
   const { isSubmitting } = form.formState;
+
+  console.log(data)
 
   return (
     <div>
