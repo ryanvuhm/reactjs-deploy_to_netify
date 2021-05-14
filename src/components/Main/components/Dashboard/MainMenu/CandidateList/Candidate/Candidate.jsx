@@ -34,10 +34,10 @@ function Candidate({ dataCandidate, ChangeSpells }) {
 
   const onUpdate = async values => {
     // const newCandidate = {...dataCandidate,...values}
-    const newCandidate = {...dataCandidate, ...values, image: fileUrl,time: time.replace("T"," And ") };
+    const newCandidate = {...dataCandidate, ...values, image: fileUrl,time: time};
     console.log({...dataCandidate})
     console.log({...values})
-    console.log(Object.assign(dataCandidate,values))
+    console.log(newCandidate)
  
     
     console.log(newCandidate)
@@ -150,6 +150,8 @@ function Candidate({ dataCandidate, ChangeSpells }) {
           handleFileChange={handleFileChange}
           handleCalendar={handleCalendar}
           handleAttractive={handleAttractive}
+
+          data={dataCandidate}
           />
           
         <Button

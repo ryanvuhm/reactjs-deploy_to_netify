@@ -73,7 +73,7 @@ export default function Header() {
     const back = status(false);
     dispatch(back);
     auth.signOut();
-
+    localStorage.removeItem("token")
     history.replace("/");
   };
   const classes = useStyles();
@@ -89,13 +89,13 @@ export default function Header() {
             </Link>
           </Typography>
 
-          {isLoggedIn
-            ? <IconButton color="inherit" onClick={handleClickMenu}>
+          {/* {isLoggedIn */}
+             <IconButton color="inherit" onClick={handleClickMenu}>
                 <AccountCircle />
               </IconButton>
-            : <Button color="inherit" onClick={handleClickOpen}>
-                Login
-              </Button>}
+            {/* // : <Button color="inherit" onClick={handleClickOpen}>
+            //     Login
+            //   </Button> */}
         </Toolbar>
       </AppBar>
       <Menu

@@ -85,6 +85,7 @@ export default function CreateCanditate(props) {
     if (onSubmit) {
       await onSubmit(values);
     }
+    setOpen(false);
 
     // form.reset();
   };

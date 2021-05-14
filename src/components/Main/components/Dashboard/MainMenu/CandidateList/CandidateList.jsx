@@ -138,9 +138,9 @@ function CandidateList(props) {
   console.log(filterCandidate);
 
   const handleClickAttractive = () => {
-    setToggle(!toggle);
+    // setToggle(!toggle);
     var displayedContacts = spells.filter(function(el) {
-      return toggle ? el.attractive == true : true;
+      return  el.attractive !=  "default";
     });
 
     setFilterCandidate(displayedContacts);

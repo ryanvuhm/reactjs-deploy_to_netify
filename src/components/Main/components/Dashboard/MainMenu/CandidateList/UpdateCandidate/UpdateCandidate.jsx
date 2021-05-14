@@ -53,7 +53,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 export default function UpdateCandidate(props) {
-  const [selectedDate, setSelectedDate] = useState("");
+   const { data } = props;
+
+
+  const [selectedDate, setSelectedDate] = useState(data.time);
 
   const [value, setValue] = React.useState("attractive");
 
@@ -85,7 +88,7 @@ export default function UpdateCandidate(props) {
     if (onSubmit) {
       await onSubmit(values);
     }
-
+    setOpen(false);
     // form.reset();
   };
 
@@ -142,8 +145,8 @@ export default function UpdateCandidate(props) {
             </Typography>
 
             <form onSubmit={form.handleSubmit(handleSubmit)}>
-              <InputField name="name" label="Name" form={form} />
-              <InputField name="positon" label="Position" form={form} />
+              <InputField name="name" label="Name" form={form} value={data.name} />
+              <InputField name="positon" label="Position" form={form} value={data.positon}  />
               <input
                 // style={{ display: "none" }}
                 id="upload-photo"

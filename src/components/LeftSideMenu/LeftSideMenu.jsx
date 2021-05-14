@@ -18,7 +18,7 @@ function LeftSideMenu(props) {
   return (
     <div className="container__base__content__left">
       <div className="container__base__content__left__logo">
-        <img src="img/logo.jpg" alt="" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvvZ5qxVXju4_3LcJst4Hmzxl0h-S07Ok7N-jJcS1rsQlIZD5bsrKvyNybVLTtDjerTc&usqp=CAU" alt="" />
       </div>
 
       <div />
@@ -31,7 +31,7 @@ function LeftSideMenu(props) {
         >
           <DashboardIcon />
 
-          <Link to="/home">
+          <Link to="/home/dashboard">
             <p>Dashboards</p>{" "}
           </Link>
         </li>
@@ -44,7 +44,7 @@ function LeftSideMenu(props) {
           id="people"
         >
           <PersonIcon />
-          <Link to="/people" onClick={handldePeopleClick}>
+          <Link to="/home/people" onClick={handldePeopleClick}>
             <p>People</p>
           </Link>
         </li>
