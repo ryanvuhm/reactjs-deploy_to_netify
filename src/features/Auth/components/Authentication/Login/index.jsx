@@ -30,7 +30,7 @@ function Login(props) {
       
 
        localStorage.setItem("token",JSON.stringify("token"))
-      history.replace("/home/dashboard")
+      history.replace("/home")
       console.log("success")
      
     } catch (errors) {

@@ -30,10 +30,8 @@ function App() {
       <div className="container">
         <Switch>
       
-          <Route path="/" component={Auth} exact />
-          <Route path="/home" component={Main}>
-            {/* {isLoggedIn ? <Main /> : <Redirect to="/" />} */}
-          </Route>
+          <Route path="/" component={Dashboard} exact />
+      
 
           <Route component={NotFound} />
         </Switch>
