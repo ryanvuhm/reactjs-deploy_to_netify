@@ -31,9 +31,9 @@ function App() {
         <Switch>
           
           <Route path="/" component={Auth} exact />
-          <Route path="/home" component={Main}>
-            
-            {/* {isLoggedIn ? <Main /> : <Redirect to="/" />} */}
+          <Route path="/home" >
+
+            {isLoggedIn ? <Main /> : <Redirect to="/" />}
           </Route>
 
           <Route component={NotFound} />
