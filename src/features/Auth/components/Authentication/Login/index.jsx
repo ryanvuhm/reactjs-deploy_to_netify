@@ -29,7 +29,7 @@ function Login(props) {
       dispatch(loggedIn);
       
 
-      localStorage.setItem("token",JSON.stringify("token"))
+       localStorage.setItem("token",JSON.stringify("token"))
       history.replace("/home/dashboard")
       console.log("success")
      
