@@ -51,8 +51,9 @@ export const InputField = props => {
               fullWidth
               margin="normal"
               variant="outlined"
-              label={value}
+              label={label}
               disabled={disabled}
+              placeholder={value}
               // value={value}
               // onChange={(e)=>field.onChange(e)}
               // onChange={field.onChange()}
