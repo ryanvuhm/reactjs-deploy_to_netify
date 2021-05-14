@@ -5,63 +5,63 @@ HidingMenu.propTypes = {};
 
 function HidingMenu(props) {
   return (
-    <div class="container__base__navbar d-none">
-      <div class="menu-button">
-        <input id="dropdown-button" type="checkbox" class="dropdown-toggle" />
-        <label class="dropdown-label" for="dropdown-button" />
+    <div className="container__base__navbar d-none">
+      <div className="menu-button">
+        <input id="dropdown-button" type="checkbox" className="dropdown-toggle" />
+        <label className="dropdown-label" htmlFor="dropdown-button" />
 
-        <div class="menu-slide-from-left" id="menu">
-          <div class="content__left">
-            <div class="content__left__logo">
+        <div className="menu-slide-from-left" id="menu">
+          <div className="content__left">
+            <div className="content__left__logo">
               <img src="img/logo.jpg" alt="" />
             </div>
 
             <div />
 
-            <ul class="content__left__list">
+            <ul className="content__left__list">
               <li>Tools</li>
-              <li class="content__left__list__details">
-                <i class="fab fa-windows" />
+              <li className="content__left__list__details">
+                <i className="fab fa-windows" />
 
                 <p>Dashboards</p>
               </li>
-              <li class="content__left__list__details">
-                <i class="fab fa-buffer" />
+              <li className="content__left__list__details">
+                <i className="fab fa-buffer" />
                 <p>Offers</p>
               </li>
-              <li class="content__left__list__details">
-                <i class="fas fa-user" />
+              <li className="content__left__list__details">
+                <i className="fas fa-user" />
 
                 <p>People</p>
               </li>
-              <li class="content__left__list__details">
-                <i class="fas fa-chart-bar" />
+              <li className="content__left__list__details">
+                <i className="fas fa-chart-bar" />
                 <p>Statics</p>
               </li>
-              <li class="content__left__list__details">
-                <i class="fas fa-file-alt" />
+              <li className="content__left__list__details">
+                <i className="fas fa-file-alt" />
                 <p>Documents</p>
               </li>
             </ul>
 
-            <ul class="content__left__list">
+            <ul className="content__left__list">
               <li>Others</li>
-              <li class="content__left__list__details">
-                <i class="fas fa-comment-dots" />
+              <li className="content__left__list__details">
+                <i className="fas fa-comment-dots" />
                 <p>Chat</p>
-                <div class="box-chat">5</div>
+                <div className="box-chat">5</div>
               </li>
-              <li class="content__left__list__details">
-                <i class="far fa-question-circle" />
+              <li className="content__left__list__details">
+                <i className="far fa-question-circle" />
                 <p>Support</p>
               </li>
-              <li class="content__left__list__details">
-                <i class="fas fa-calendar-alt" />
+              <li className="content__left__list__details">
+                <i className="fas fa-calendar-alt" />
                 <p>Calendar</p>
               </li>
 
-              <div class="content__left__footer">
-                <div class="content__left__footer__logo">
+              <div className="content__left__footer">
+                <div className="content__left__footer__logo">
                   <img
                     src="img/people_avatar_head_wolverine_logan_xman_marvel-512.png"
                     alt=""

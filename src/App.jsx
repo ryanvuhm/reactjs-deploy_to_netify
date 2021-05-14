@@ -18,6 +18,7 @@ function App() {
   const [nowrap, setWrap] = useState("");
 
   const isLoggedIn = JSON.parse(localStorage.getItem("token"));
+  
   const dispatch = useDispatch();
 
   const HandlePeopleClick = () => {
@@ -30,8 +31,10 @@ function App() {
       <div className="container">
         <Switch>
       
-          <Route path="/" component={Dashboard} exact />
-      
+          <Route path="/" component={Auth} exact />
+          <Route path="/home" component={Main}>
+            {/* {isLoggedIn ? <Main /> : <Redirect to="/" />} */}
+          </Route>
 
           <Route component={NotFound} />
         </Switch>

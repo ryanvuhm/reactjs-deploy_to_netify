@@ -39,13 +39,15 @@ function Main(props) {
         <div className={`container__base__content ${nowrap}`} id="base-content">
           <LeftSideMenu peopleClick={HandlePeopleClick} />
           <Switch>
-            <Route path="/home" component={Dashboard} exact></Route>
-            <Route path="/home/dashboard" component={Dashboard}>
-              {/* {isLoggedIn ? <Dashboard /> : <Redirect to="/" />} */}
+            <Route path="/home"  exact>
+            {isLoggedIn ? <Dashboard /> : <Redirect to="/" />}
+            </Route>
+            <Route path="/home/dashboard">
+              {isLoggedIn ? <Dashboard /> : <Redirect to="/" />}
             </Route>
 
-            <Route path="/home/people" component={People}>
-              {/* {isLoggedIn ? <People /> : <Redirect to="/" />} */}
+            <Route path="/home/people">
+              {isLoggedIn ? <People /> : <Redirect to="/" />}
             </Route>
 
             <Route component={NotFound} />
