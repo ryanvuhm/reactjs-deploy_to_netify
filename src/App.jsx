@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Switch>
-          
+      
           <Route path="/" component={Auth} exact />
           <Route path="/home" component={Main}>
             {/* {isLoggedIn ? <Main /> : <Redirect to="/" />} */}

@@ -40,12 +40,12 @@ function Main(props) {
           <LeftSideMenu peopleClick={HandlePeopleClick} />
           <Switch>
             <Route path="/home" component={Dashboard} exact></Route>
-            <Route path="/home/dashboard">
-              {isLoggedIn ? <Dashboard /> : <Redirect to="/" />}
+            <Route path="/home/dashboard" component={Dashboard}>
+              {/* {isLoggedIn ? <Dashboard /> : <Redirect to="/" />} */}
             </Route>
 
-            <Route path="/home/people">
-              {isLoggedIn ? <People /> : <Redirect to="/" />}
+            <Route path="/home/people" component={People}>
+              {/* {isLoggedIn ? <People /> : <Redirect to="/" />} */}
             </Route>
 
             <Route component={NotFound} />
