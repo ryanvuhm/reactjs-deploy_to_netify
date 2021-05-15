@@ -1,18 +1,10 @@
-import logo from "./logo.svg";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 // import "./App.css";
-import { Redirect, Route, Switch, useRouteMatch } from "react-router";
-
-import NotFound from "./routes/NotFound/NotFound";
-import { useEffect, useState } from "react";
-
-import LeftSideMenu from "./components/LeftSideMenu/LeftSideMenu";
+import { Route, Switch } from "react-router";
 import Main from "./components/Main/Main";
-import Dashboard from "./components/Main/components/Dashboard/Dashboard";
-import People from "./components/Main/components/People/People";
-import HidingMenu from "./components/HidingMenu/HidingMenu";
-import Header from "./components/Header/Header";
-import { useDispatch, useSelector } from "react-redux";
 import Auth from "./features/Auth/components/Authentication/Auth";
+import NotFound from "./routes/NotFound/NotFound";
 
 function App() {
   const [nowrap, setWrap] = useState("");
